@@ -4,6 +4,7 @@ import { FiMail, FiLock, FiEye, FiEyeOff, FiArrowRight } from 'react-icons/fi';
 import './Styles/Login.css';
 import logo from './assets/logo.png'; 
 import useLogin from './Hooks/useLogin';
+import CookieConsent from './components/cookieConsent';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -46,9 +47,11 @@ const Login = () => {
     hover: { y: -5, boxShadow: "0 10px 25px rgba(220, 38, 38, 0.2)" },
     tap: { scale: 0.98 }
   };
+  
 
   return (
     <div className="login-page">
+        
       <motion.div 
         className="login-container"
         initial="hidden"
