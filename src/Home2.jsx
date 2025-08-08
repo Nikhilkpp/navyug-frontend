@@ -27,7 +27,7 @@ const Home2 = () => {
             time: '2 घंटे पहले',
             image: 'https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
             views: '1.2k',
-            isBreaking: true
+            isBreaking: false
           },
           {
             id: 2,

@@ -1,0 +1,93 @@
+.dashboard {
+  padding: 20px;
+}
+
+.stats-grid-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin-top: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.stat-card p {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d70000;
+}
+
+.recent-articles {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.recent-articles h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #555;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.status-badge.published {
+  background-color: #e6f4ea;
+  color: #34a853;
+}
+
+.status-badge.draft {
+  background-color: #fef7e0;
+  color: #fbbc04;
+}
+
+@media (max-width: 768px) {
+  .stats-grid-dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid-dashboard {
+    grid-template-columns: 1fr;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+}

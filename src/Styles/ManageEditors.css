@@ -1,0 +1,108 @@
+.manage-editors {
+  padding: 20px;
+}
+
+.add-author {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.add-author h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  background-color: #d70000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.author-list {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.author-list h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.authors-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.action-btn.edit {
+  color: #fbbc04;
+}
+
+.action-btn.delete {
+  color: #d93025;
+}
+
+@media (max-width: 768px) {
+  .add-author {
+    padding: 15px;
+  }
+  
+  .author-list {
+    padding: 15px;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+}

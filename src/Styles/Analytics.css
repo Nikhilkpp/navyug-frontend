@@ -1,0 +1,15 @@
+.analytics {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 7px #eaeafb;
+  padding: 28px 36px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.analytics h2 {
+  margin-bottom: 1.2rem;
+}
+.analytics p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}

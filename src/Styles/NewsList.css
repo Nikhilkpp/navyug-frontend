@@ -1,0 +1,113 @@
+.news-list {
+  padding: 20px;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.article-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.article-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.article-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.article-card-details {
+  padding: 0 15px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.article-content {
+  padding: 15px 0;
+  line-height: 1.6;
+}
+
+.article-actions {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.action-btn.view {
+  background-color: #e8f4fc;
+  color: #1a73e8;
+  border: none;
+}
+
+.action-btn.edit {
+  background-color: #fef7e0;
+  color: #fbbc04;
+  border: none;
+}
+
+.action-btn.delete {
+  background-color: #fce8e6;
+  color: #d93025;
+  border: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.status-badge.published {
+  background-color: #e6f4ea;
+  color: #34a853;
+}
+
+.status-badge.draft {
+  background-color: #fef7e0;
+  color: #fbbc04;
+}
+
+@media (max-width: 768px) {
+  .article-actions {
+    flex-direction: column;
+  }
+  
+  .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
