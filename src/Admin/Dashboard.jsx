@@ -91,7 +91,7 @@ const Dashboard = () => {
         <h2>डैशबोर्ड</h2>
         
         <div className="stats-grid-dashboard">
-          {stats.map((stat, index) => (
+          {stats?.map((stat, index) => (
             <motion.div
               key={stat.title}
               className="stat-card"
@@ -118,7 +118,7 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {recentArticles.map((article) => (
+              {recentArticles?.map((article) => (
                 <tr key={article._id}>
                   <td>{article.title}</td>
                   <td>{article.category.name}</td>
