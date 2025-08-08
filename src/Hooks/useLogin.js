@@ -18,7 +18,7 @@ const useLogin = () => {
             const hasConsent = localStorage.getItem("cookiesAccepted");
             if (!hasConsent) {
                 toast.error("Please accept cookies to log in");
-                return;
+                
             }
 
             const res = await fetch(`${apiUrl}/api/v1/users/login`, {
@@ -54,6 +54,7 @@ const useLogin = () => {
                 role: encryptedRole,
                 isActive: 1
             })
+            localStorage.setItem('cookiesAccepted', true);
 
             localStorage.setItem('$xyz', encryptedRole);
             localStorage.setItem('$yxz', data.user.isActive ? 1 : 0)
